@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             statusMessage.style.color = "#555";
             const message = `🎉 Новая RSVP заявка:\n\n👤 Имя: ${name}\n✅ Придёт: ${attendance}\n👥 Гостей: ${guests}\n💬 Комментарий: ${comment}`;
             const telegramBotToken = "8494042399:AAHQviXTPYmuzv3HAWW3cQqtD5BA5KUnu8g";
-            const chatId = "-4825346188";
+            const chatId = "-1002711815206";
             try {
                 const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
                     method: 'POST',
@@ -139,4 +139,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.addEventListener('click', startMusic);
         document.body.addEventListener('touchstart', startMusic);
     }
+
 });
